@@ -4,6 +4,8 @@ concurrency:
   cancel-in-progress: true
 
 on:
+  schedule:
+    - cron: "0 15 * * 5"
   workflow_dispatch:
 
 jobs:
@@ -44,8 +46,9 @@ jobs:
           with:
             title: Continuous build
             automatic_release_tag: continuous
-            prerelease: true
+            prerelease: false
             draft: false
             files: |
               Amarok-x86_64.AppImage
             repo_token: ${{ secrets.GITHUB_TOKEN }}
+
