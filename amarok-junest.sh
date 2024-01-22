@@ -3,7 +3,7 @@
 # NAME OF THE APP BY REPLACING "SAMPLE"
 APP=amarok
 BIN="$APP" #CHANGE THIS IF THE NAME OF THE BINARY IS DIFFERENT FROM "$APP" (for example, the binary of "obs-studio" is "obs")
-DEPENDENCES="ca-certificates freetype2 harfbuzz ifuse kcmutils5 kded-git kdnssd5 kdoctools5 kio-git kirigami2 knewstuff5 ktexteditor5 libglvnd liblastfm-qt5 libofa loudmouth mariadb mariadb-clients mariadb-libs mesa phonon-qt5 phonon-qt5-vlc pulseaudio qt5-webengine threadweaver5"
+DEPENDENCES="ca-certificates ifuse kcmutils5 kdnssd5 kdoctools5 kirigami2 knewstuff5 ktexteditor5 liblastfm-qt5 libofa loudmouth mariadb mariadb-clients mariadb-libs phonon-qt5 phonon-qt5-vlc pulseaudio qt5-webengine threadweaver5"
 BASICSTUFF="binutils gzip"
 COMPILERS="base-devel"
 
