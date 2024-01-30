@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # NAME OF THE APP BY REPLACING "SAMPLE"
-APP=amarok
+APP=amarok-git
 BIN="$APP" #CHANGE THIS IF THE NAME OF THE BINARY IS DIFFERENT FROM "$APP" (for example, the binary of "obs-studio" is "obs")
-DEPENDENCES="ca-certificates kcmutils5 kdoctools5 kdnssd5 kirigami2 knewstuff5 ktexteditor5 liblastfm-qt5 libofa mariadb phonon-qt5 qt5-webengine taglib-extras threadweaver5 ifuse loudmouth pulseaudio"
+DEPENDENCES="ffmpeg fftw gmock kcmutils5 kdnssd5 kirigami2 knewstuff5 ktexteditor5 libgpod liblastfm-qt5 libmariadbclient libmtp libmygpo-qt5 loudmouth phonon-qt5 qt5-declarative qt5-webengine taglib-extras threadweaver5 pulseaudio"
 BASICSTUFF="binutils gzip"
 COMPILERS="base-devel"
 
@@ -162,7 +162,7 @@ for arg in $DEPS4; do
 done
 
 # REMOVE SOME BLOATWARES
-#echo Y | rm -R .f ./$APP.AppDir/.cache/yay/*
+echo Y | rm -R .f ./$APP.AppDir/.cache/yay/*
 find ./$APP.AppDir/.junest/usr/share/doc/* -not -iname "*$BIN*" -a -not -name "." -delete #REMOVE ALL DOCUMENTATION NOT RELATED TO THE APP
 find ./$APP.AppDir/.junest/usr/share/locale/*/*/* -not -iname "*$BIN*" -a -not -name "." -delete #REMOVE ALL ADDITIONAL LOCALE FILES
 rm -R -f ./$APP.AppDir/.junest/etc/makepkg.conf
