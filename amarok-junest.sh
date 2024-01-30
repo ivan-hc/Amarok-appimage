@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # NAME OF THE APP BY REPLACING "SAMPLE"
-APP=amarok
+APP=amarok-git
 BIN="amarok" #CHANGE THIS IF THE NAME OF THE BINARY IS DIFFERENT FROM "$APP" (for example, the binary of "obs-studio" is "obs")
-DEPENDENCES="ffmpeg fftw gmock kcmutils5 kdnssd5 kirigami2 knewstuff5 ktexteditor5 libgpod liblastfm-qt5 libmariadbclient libmtp libmygpo-qt5 loudmouth phonon-qt5 qt5-declarative qt5-webengine taglib taglib-extras threadweaver5 pulseaudio"
+DEPENDENCES="ca-certificates pulseaudio"
 BASICSTUFF="binutils gzip"
 COMPILERS="base-devel"
 
@@ -30,12 +30,12 @@ echo "
 Include = /etc/pacman.d/mirrorlist" >> ./.junest/etc/pacman.conf
 
 # ENABLE CHAOTIC-AUR
-./.local/share/junest/bin/junest -- sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-./.local/share/junest/bin/junest -- sudo pacman-key --lsign-key 3056513887B78AEB
-./.local/share/junest/bin/junest -- sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-echo "
-[chaotic-aur]
-Include = /etc/pacman.d/chaotic-mirrorlist" >> ./.junest/etc/pacman.conf
+###./.local/share/junest/bin/junest -- sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
+###./.local/share/junest/bin/junest -- sudo pacman-key --lsign-key 3056513887B78AEB
+###./.local/share/junest/bin/junest -- sudo pacman --noconfirm -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+###echo "
+###[chaotic-aur]
+###Include = /etc/pacman.d/chaotic-mirrorlist" >> ./.junest/etc/pacman.conf
 
 # CUSTOM MIRRORLIST, THIS SHOULD SPEEDUP THE INSTALLATION OF THE PACKAGES IN PACMAN (COMMENT EVERYTHING TO USE THE DEFAULT MIRROR)
 _custom_mirrorlist(){
