@@ -2,8 +2,8 @@
 
 # NAME OF THE APP BY REPLACING "SAMPLE"
 APP=amarok-git
-BIN="amarok" #CHANGE THIS IF THE NAME OF THE BINARY IS DIFFERENT FROM "$APP" (for example, the binary of "obs-studio" is "obs")
-DEPENDENCES="ca-certificates pulseaudio"
+BIN="amarok"
+DEPENDENCES="ca-certificates cmake pulseaudio taglib-extras taglib-git"
 BASICSTUFF="binutils gzip"
 COMPILERS="base-devel"
 
@@ -117,7 +117,7 @@ cd ..
 
 # EXTRACT PACKAGE CONTENT
 mkdir base
-tar fx $(find ./$APP.AppDir -name $APP-[0-9]*zst | head -1) -C ./base/
+tar fx $(find ./$APP.AppDir -name $BIN-[0-9]*zst | head -1) -C ./base/
 VERSION=$(cat ./base/.PKGINFO | grep pkgver | cut -c 10- | sed 's@.*:@@')
 mkdir deps
 
