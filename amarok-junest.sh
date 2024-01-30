@@ -280,7 +280,7 @@ _mvlibs(){
 
 _binlibs 2> /dev/null
 
-#_include_swrast_dri 2> /dev/null
+_include_swrast_dri 2> /dev/null
 
 _libkeywords 2> /dev/null
 
