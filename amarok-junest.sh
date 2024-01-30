@@ -2,7 +2,7 @@
 
 # NAME OF THE APP BY REPLACING "SAMPLE"
 APP=amarok-git
-BIN="$APP" #CHANGE THIS IF THE NAME OF THE BINARY IS DIFFERENT FROM "$APP" (for example, the binary of "obs-studio" is "obs")
+BIN="amarok" #CHANGE THIS IF THE NAME OF THE BINARY IS DIFFERENT FROM "$APP" (for example, the binary of "obs-studio" is "obs")
 DEPENDENCES="ffmpeg fftw gmock kcmutils5 kdnssd5 kirigami2 knewstuff5 ktexteditor5 libgpod liblastfm-qt5 libmariadbclient libmtp libmygpo-qt5 loudmouth phonon-qt5 qt5-declarative qt5-webengine taglib-extras threadweaver5 pulseaudio"
 BASICSTUFF="binutils gzip"
 COMPILERS="base-devel"
