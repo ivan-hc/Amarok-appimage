@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # NAME OF THE APP BY REPLACING "SAMPLE"
-APP=amarok
-BIN="$APP"
-DEPENDENCES="ca-certificates pulseaudio taglib-extras taglib-git"
+APP=amarok-git
+BIN="amarok"
+DEPENDENCES="ca-certificates pulseaudio"
 BASICSTUFF="binutils gzip"
 COMPILERS="base-devel"
 
