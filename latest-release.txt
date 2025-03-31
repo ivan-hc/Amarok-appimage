@@ -1,1 +1,1 @@
-https://github.com/ivan-hc/Amarok-appimage/releases/download/continuous/Amarok_3.2.2-1.1-archimage4.3-x86_64.AppImage
+https://github.com/ivan-hc/Amarok-appimage/releases/download/continuous/Amarok_3.2.2-1.2-archimage4.3-x86_64.AppImage
