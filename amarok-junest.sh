@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-APP=amarok-qt6
-BIN="amarok" #CHANGE THIS IF THE NAME OF THE BINARY IS DIFFERENT FROM "$APP" (for example, the binary of "obs-studio" is "obs")
+APP=amarok
+BIN="$APP" #CHANGE THIS IF THE NAME OF THE BINARY IS DIFFERENT FROM "$APP" (for example, the binary of "obs-studio" is "obs")
 DEPENDENCES="alsa-lib dbus ibus libibus libpulse nss udisks2 pipewire phonon-qt6 phonon-qt6-vlc libvlc vlc nss-mdns" #SYNTAX: "APP1 APP2 APP3 APP4...", LEAVE BLANK IF NO OTHER DEPENDENCIES ARE NEEDED
 BASICSTUFF="binutils debugedit gzip"
 COMPILERS="base-devel"
