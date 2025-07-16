@@ -1,2 +1,1 @@
-https://github.com/ivan-hc/Amarok-appimage/releases/download/continuous/Amarok_3.3.0-1-archimage4.3-x86_64.AppImage
-Mon Jul 14 01:00:17 UTC 2025
+Wed Jul 16 00:58:14 UTC 2025
